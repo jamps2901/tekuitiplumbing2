@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te Kuiti Plumbing & Drainlaying | King Country Local Tradesman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#035388',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            copper: {
+              400: '#fb923c',
+              500: '#ea580c',
+              600: '#c2410c',
+              700: '#9a3412',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-copper-500 selection:text-white">
+
+  <!-- TOP EMERGENCY BANNER -->
+  <div class="bg-gradient-to-r from-copper-700 via-copper-600 to-copper-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-inner flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-amber-300 animate-ping"></span>
+    <span><strong>24/7 Emergency Callouts Available</strong> across Te Kuiti & Waitomo District</span>
+    <span class="hidden md:inline">|</span>
+    <a href="tel:0800000000" class="underline hover:text-amber-200 font-bold hidden md:inline transition-colors">Call Direct: 0800 000 000</a>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-bold text-xl tracking-tight text-white block leading-none">TE KUITI</span>
+          <span class="text-xs font-semibold text-brand-500 tracking-wider uppercase block mt-1">Plumbing & Drainlaying</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#service-area" class="hover:text-white transition-colors">Service Area</a>
+        <a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- Desktop Call Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:0800000000" class="inline-flex items-center gap-2 bg-copper-600 hover:bg-copper-500 text-white font-bold px-5 py-2.5 rounded-lg shadow-lg shadow-copper-600/30 hover:shadow-copper-500/50 transition-all text-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          <span>0800 000 000</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-slate-900 overflow-hidden pt-12 pb-20 md:py-28 border-b border-slate-800">
+    <!-- Background Decorator -->
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-500/30 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-0 w-96 h-96 bg-copper-500/20 rounded-full blur-3xl"></div>
+      <div class="w-full h-full bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-brand-500 text-xs font-semibold tracking-wide uppercase">
+            <svg class="w-4 h-4 text-copper-500" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            Certifying Plumbers & Drainlayers • King Country Wide
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
+            Fast, Honest Plumbing in <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 via-sky-400 to-copper-400">Te Kuiti</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            From hot water cylinder repairs and unblocking clogged drains to farm stock water lines and full bathroom renovations. Prompt, local service when you need it most.
+          </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-medium text-slate-300">
+            <span class="flex items-center gap-1.5 bg-slate-800/60 px-3 py-1.5 rounded-md border border-slate-700/50">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              No Hidden Fees
+            </span>
+            <span class="flex items-center gap-1.5 bg-slate-800/60 px-3 py-1.5 rounded-md border border-slate-700/50">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Residential & Rural
+            </span>
+            <span class="flex items-center gap-1.5 bg-slate-800/60 px-3 py-1.5 rounded-md border border-slate-700/50">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              NZ Registered Craftsmen
+            </span>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="tel:0800000000" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-copper-600 hover:bg-copper-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl shadow-copper-600/30 hover:scale-[1.02] transition-all">
+              <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <span>Call 0800 000 000</span>
+            </a>
+            
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold text-base px-6 py-4 rounded-xl border border-slate-700 transition-all">
+              <span>Request Job Quote</span>
+              <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Box / Quick Call Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-gradient-to-b from-slate-800 to-slate-800/90 p-6 sm:p-8 rounded-2xl border border-slate-700/80 shadow-2xl relative">
+            <div class="absolute -top-3 right-6 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Fast Dispatch
+            </div>
+            
+            <h3 class="font-display text-xl font-bold text-white mb-2">Need a Plumber Right Away?</h3>
+            <p class="text-slate-300 text-sm mb-6">Burst pipe? Cold shower? Blocked loo? We cover Te Kuiti, Piopio, Waitomo Caves, and surrounding farms.</p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/60 border border-slate-800">
+                <div class="p-2 bg-copper-500/10 text-copper-400 rounded-lg">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-semibold uppercase">Response Time</div>
+                  <div class="text-sm font-semibold text-white">Prompt Local Callouts</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/60 border border-slate-800">
+                <div class="p-2 bg-brand-500/10 text-brand-400 rounded-lg">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-semibold uppercase">Base Location</div>
+                  <div class="text-sm font-semibold text-white">Te Kuiti & Waitomo District</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-900/60 border border-slate-800">
+                <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400 font-semibold uppercase">Workmanship Guarantee</div>
+                  <div class="text-sm font-semibold text-white">100% Guaranteed & Insured</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-700/60 text-center">
+              <a href="tel:0800000000" class="block w-full py-3 bg-gradient-to-r from-copper-600 to-copper-500 text-white font-bold rounded-lg shadow-md hover:brightness-110 transition-all text-center">
+                Tap To Call 0800 000 000
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-copper-500 font-semibold text-xs uppercase tracking-widest block mb-2">What We Do</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Plumbing & Drainage</h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">Whether it's a leaking tap in town or a failed water pump on the farm, our trade-certified plumbers have you sorted.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">Hot Water Cylinders</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Low pressure to mains pressure conversions, cylinder repairs, element replacements, and emergency cylinder leak fixes.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span> Mains pressure upgrades</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span> Gas continuous flow options</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span> Element & thermostat replacements</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-copper-500/10 border border-copper-500/20 text-copper-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">General Domestic Plumbing</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Leaking taps, running toilets, pipe re-routing, kitchen and bathroom alterations, vanity and shower installations.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-copper-500"></span> Kitchen & bathroom fit-outs</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-copper-500"></span> Leak detection & pipe repairs</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-copper-500"></span> Tapware & toilet repairs</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">Blocked Drains & Drainlaying</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Certified drainlaying, clearing blocked sewer lines, stormwater repairs, and septic system connections.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> High-pressure drain clearing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> New sewer & stormwater lines</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Septic tank plumbing connections</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">Rural & Farm Plumbing</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            We understand King Country farming setup. Stock water trough feeds, pressure pumps, woolshed plumbing, and tank installs.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Water tank & pump installations</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Stock water pipe maintenance</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Farm shed & dairy wash-down lines</li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">Roofing & Spouting Repairs</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Fixing gutter leaks, replacing damaged spouting, downpipe repairs, and sheet metal roof maintenance for heavy King Country rain.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Spouting replacement & clearing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Downpipe & rainwater management</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Roof leak diagnostics</li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
+          <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-3">Emergency Callouts</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Burst water mains, overflowing drains, or no hot water? We offer prompt emergency callouts to minimise water damage.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Urgent pipe isolation & repair</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> After-hours emergency response</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Fast local dispatch</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICE AREA SECTION -->
+  <section id="service-area" class="py-20 bg-slate-900 border-t border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-copper-500 font-semibold text-xs uppercase tracking-widest">Coverage Map</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Servicing Te Kuiti & The King Country</h2>
+          <p class="text-slate-300 leading-relaxed">
+            Based right here in Te Kuiti, we service homes, lifestyle blocks, and farms right across the Waitomo District and neighbouring King Country communities.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Te Kuiti Town</span>
+                <span class="text-slate-400 text-xs">Primary Callout Hub</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Piopio</span>
+                <span class="text-slate-400 text-xs">Regular Service</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Waitomo Caves</span>
+                <span class="text-slate-400 text-xs">Regular Service</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Otorohanga</span>
+                <span class="text-slate-400 text-xs">Daily Travel</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Benneydale</span>
+                <span class="text-slate-400 text-xs">Rural Service</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-center gap-3">
+              <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+              <div>
+                <span class="text-white font-bold block text-sm">Mokau & Coastal</span>
+                <span class="text-slate-400 text-xs">By Appointment</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 italic">
+            * Unsure if your property is within our standard callout area? Give us a call — we regularly travel to surrounding stations and rural properties.
+          </p>
+        </div>
+
+        <!-- Stylized Map/Location Visual -->
+        <div class="lg:col-span-6">
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 p-8 rounded-3xl relative overflow-hidden text-center shadow-2xl">
+            <!-- Decorative grid -->
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40"></div>
+
+            <div class="relative z-10 py-8">
+              <div class="w-20 h-20 bg-copper-600/20 text-copper-500 rounded-full flex items-center justify-center mx-auto mb-6 border border-copper-500/40 ring-8 ring-copper-500/10">
+                <svg class="w-10 h-10 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+
+              <h3 class="font-display text-2xl font-bold text-white">Te Kuiti Plumbing Headquarters</h3>
+              <p class="text-slate-300 text-sm mt-2">Serving Waitomo District & surrounding King Country farms</p>
+
+              <div class="mt-8 pt-6 border-t border-slate-700/80 flex justify-center items-center gap-6 text-xs text-slate-300">
+                <div>
+                  <span class="block text-slate-400 font-medium">Standard Hours</span>
+                  <span class="text-white font-bold">Mon–Fri: 7:00am – 5:00pm</span>
+                </div>
+                <div class="h-8 w-px bg-slate-700"></div>
+                <div>
+                  <span class="block text-slate-400 font-medium">Emergency Service</span>
+                  <span class="text-copper-400 font-bold">24 Hours / 7 Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why-us" class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-copper-500 font-semibold text-xs uppercase tracking-widest block mb-2">Local & Reliable</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Why Te Kuiti Locals Trust Us</h2>
+        <p class="text-slate-400 mt-4 text-base">We pride ourselves on turning up on time, communicating clearly, and leaving the job site spotless.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg mb-4">01</div>
+          <h4 class="font-bold text-white text-lg mb-2">Certified Craftsmen</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Fully registered with the NZ Plumbers, Gasfitters and Drainlayers Board for complete peace of mind.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg mb-4">02</div>
+          <h4 class="font-bold text-white text-lg mb-2">Clear Upfront Quotes</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">No surprises on your invoice. We explain the work required and the costs before we begin.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg mb-4">03</div>
+          <h4 class="font-bold text-white text-lg mb-2">Equipped for Farms</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Equipped 4WD ute stocked with heavy-duty fittings for town water supply or farm trough lines.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg mb-4">04</div>
+          <h4 class="font-bold text-white text-lg mb-2">Prompt Emergency Service</h4>
+          <p class="text-slate-400 text-xs leading-relaxed">Plumbing disasters don't wait for business hours. Call us 24/7 for fast local emergency assistance.</p>
+        </div>
+
+      </div>
+
+      <!-- Simple Local Testimonial Quote -->
+      <div class="mt-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-800 p-8 rounded-2xl max-w-4xl mx-auto text-center relative">
+        <svg class="w-10 h-10 text-slate-700 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+        <p class="text-lg sm:text-xl text-slate-200 font-medium italic">
+          "Sorted our farm stock water line issue in Piopio on the same afternoon we called. Honest Kiwi tradie who knows his stuff."
+        </p>
+        <div class="mt-4 text-xs font-semibold text-copper-400 uppercase tracking-wider">— Local Farmer, Waitomo District</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT & QUOTE FORM SECTION -->
+  <section id="contact" class="py-20 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Info -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-copper-500 font-semibold text-xs uppercase tracking-widest block mb-2">Get In Touch</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Book a Service or Request a Quote</h2>
+            <p class="text-slate-300 mt-4 leading-relaxed">
+              Have a plumbing job in Te Kuiti or surrounding areas? Fill out the form or call us direct for immediate assistance.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <a href="tel:0800000000" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 hover:border-copper-500 transition-colors group">
+              <div class="w-12 h-12 rounded-lg bg-copper-600/20 border border-copper-500/30 text-copper-400 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 uppercase font-semibold block">Phone Direct</span>
+                <span class="text-xl font-bold text-white group-hover:text-copper-400 transition-colors">0800 000 000</span>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+              <div class="w-12 h-12 rounded-lg bg-brand-600/20 border border-brand-500/30 text-brand-400 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 uppercase font-semibold block">Email Inquiries</span>
+                <span class="text-base font-semibold text-white">info@tekuitiplumbing.co.nz</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700/80">
+              <div class="w-12 h-12 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 uppercase font-semibold block">Location</span>
+                <span class="text-base font-semibold text-white">Te Kuiti, King Country, New Zealand</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="lg:col-span-7 bg-slate-800/90 border border-slate-700 p-6 sm:p-8 rounded-2xl shadow-xl">
+          <form onsubmit="event.preventDefault(); alert('Thank you! This form is a demonstration preview. For immediate service please phone 0800 000 000.');" class="space-y-4">
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold uppercase text-slate-300 mb-1">Your Full Name</label>
+                <input type="text" required placeholder="e.g. Wiremu Smith" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase text-slate-300 mb-1">Phone Number</label>
+                <input type="tel" required placeholder="e.g. 027 123 4567" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold uppercase text-slate-300 mb-1">Town / Location</label>
+                <input type="text" required placeholder="e.g. Te Kuiti / Piopio / Waitomo" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase text-slate-300 mb-1">Service Required</label>
+                <select class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm">
+                  <option>Hot Water Cylinder</option>
+                  <option>General Plumbing & Leaks</option>
+                  <option>Blocked Drain / Drainlaying</option>
+                  <option>Rural / Farm Plumbing</option>
+                  <option>Roofing & Spouting</option>
+                  <option>Emergency Repairs</option>
+                  <option>Other Enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase text-slate-300 mb-1">Describe the Job</label>
+              <textarea rows="4" required placeholder="Please provide a brief description of what you need done..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-3.5 px-6 rounded-lg shadow-lg hover:shadow-brand-500/30 transition-all text-base">
+                Send Quote Request
+              </button>
+            </div>
+
+            <p class="text-xs text-slate-400 text-center pt-2">
+              Note: For urgent plumbing emergencies, please phone directly for immediate dispatch.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-sm py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
+            TKP
+          </div>
+          <span class="text-white font-bold tracking-tight">Te Kuiti Plumbing & Drainlaying</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400">
+          <a href="#services" class="hover:text-white transition-colors">Services</a>
+          <a href="#service-area" class="hover:text-white transition-colors">Service Area</a>
+          <a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </div>
+
+        <div class="text-xs text-slate-500">
+          © <script>document.write(new Date().getFullYear())</script> Te Kuiti Plumbing. Servicing Waitomo & King Country.
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING CALL BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-slate-900/95 border-t border-slate-800 backdrop-blur-md shadow-2xl">
+    <a href="tel:0800000000" class="flex items-center justify-center gap-3 w-full bg-copper-600 active:bg-copper-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg">
+      <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+      <span>Call Te Kuiti Plumber: 0800 000 000</span>
+    </a>
+  </div>
+
+  <div class="md:hidden h-16"></div> <!-- Spacer for mobile bottom bar -->
+
+</body>
+</html>
